@@ -1,10 +1,7 @@
 # Reproducible Research: Peer Assessment 1
 #Aaron Kleyn
 
-```r
-eval = TRUE  # Always make code visible
-options(scipen = 1)  # Turn off scientific notations for numbers
-```
+
 
 ## Loading and preprocessing the data
 ```{r loaddata}
@@ -21,7 +18,7 @@ qplot(aggregate.steps, binwidth=1000, xlab="Aggregate steps taken each day")
 ![](https://cloud.githubusercontent.com/assets/11023062/6653359/cf6362e4-ca5c-11e4-85ea-dd17fe053cef.jpg)
 
 ```{r}
-echo=TRUE
+eval = TRUE
 mean(aggregate.steps, na.rm=TRUE)
 median(aggregate.steps, na.rm=TRUE)
 ```
