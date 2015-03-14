@@ -18,7 +18,6 @@ qplot(aggregate.steps, binwidth=1000, xlab="Aggregate steps taken each day")
 ![](https://cloud.githubusercontent.com/assets/11023062/6653359/cf6362e4-ca5c-11e4-85ea-dd17fe053cef.jpg)
 
 ```{r}
-eval = TRUE
 mean(aggregate.steps, na.rm=TRUE)
 median(aggregate.steps, na.rm=TRUE)
 ```
