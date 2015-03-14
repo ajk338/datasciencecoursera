@@ -19,8 +19,11 @@ data <- read.csv("C:/Users/AJ/Desktop/activity.csv")
 library(ggplot2)
 aggregate.steps <- tapply(data$steps, data$date, FUN=sum, na.rm=TRUE)
 qplot(aggregate.steps, binwidth=1000, xlab="Aggregate steps taken each day")
+```
 
-[![Foo](https://cloud.githubusercontent.com/assets/11023062/6653359/cf6362e4-ca5c-11e4-85ea-dd17fe053cef.jpg)](http://github.com./)
+![](https://cloud.githubusercontent.com/assets/11023062/6653359/cf6362e4-ca5c-11e4-85ea-dd17fe053cef.jpg)
+
+```
 mean(aggregate.steps, na.rm=TRUE)
 median(aggregate.steps, na.rm=TRUE)
 ```
