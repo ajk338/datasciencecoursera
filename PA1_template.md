@@ -19,8 +19,15 @@ qplot(aggregate.steps, binwidth=1000, xlab="Aggregate steps taken each day")
 
 ```{r}
 mean(aggregate.steps, na.rm=TRUE)
+```
+## [1] 9354
+
+
+```{r}
 median(aggregate.steps, na.rm=TRUE)
 ```
+## [1] 10395
+
 
 ## What is the average daily activity pattern?
 ```{r}
@@ -49,6 +56,10 @@ missing <- is.na(data$steps)
 # How many missing
 table(missing)
 ```
+## missing
+## FALSE  TRUE 
+## 15264  2304
+
 
 To improve the dataset, we will impute the mean value for a 5-minute interval for each missing value.
 
@@ -73,8 +84,16 @@ qplot(total.steps, binwidth=1000, xlab="total number of steps taken each day")
 ![](https://cloud.githubusercontent.com/assets/11023062/6653361/d80106d6-ca5c-11e4-8f07-ae315719ab38.jpg)
 
 mean(total.steps)
+```
+
+
+## [1] 10766
+
+```{r}
 median(total.steps)
 ```
+
+## [1] 10766
 
 After imputing the values, the median number of steps is equal to the mean number of steps. We can conclude that by imputing the mean value for each NA we have effectively eliminated the bias in our dataset. 
 
