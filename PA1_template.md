@@ -2,7 +2,7 @@
 #Aaron Kleyn
 
 ```r
-echo = TRUE  # Always make code visible
+eval = TRUE  # Always make code visible
 options(scipen = 1)  # Turn off scientific notations for numbers
 ```
 
