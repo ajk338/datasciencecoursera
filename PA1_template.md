@@ -5,7 +5,7 @@
 
 ## Loading and preprocessing the data
 ```{r loaddata}
-data <- read.csv("C:/Users/AJ/Desktop/activity.csv")
+data <- read.csv("activity.csv")
 ```
 
 ## What is mean total number of steps taken per day?
