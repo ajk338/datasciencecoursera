@@ -82,7 +82,6 @@ A histogram was created for the steps was created, with the mean and median numb
 total.steps <- tapply(imputed.data$steps, imputed.data$date, FUN=sum)
 qplot(total.steps, binwidth=1000, xlab="total number of steps taken each day")
 
-![](https://cloud.githubusercontent.com/assets/11023062/6653361/d80106d6-ca5c-11e4-8f07-ae315719ab38.jpg)
 
 mean(total.steps)
 ```
